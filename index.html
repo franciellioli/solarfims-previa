@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Solar Films: película Supreme Ceramic em Cascavel e região. Aplicação pelo campeão CLAP 2025.">
+<meta property="og:title" content="Solar Films">
+<meta property="og:description" content="Deixe o sol entrar, mas o calor não passar.">
+<meta property="og:image" content="img/sacada-cascavel-premium.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Solar Films</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: link na bio de alto padrão — grafite com dourado champanhe; foto, prova medida, desenho didático, passos, calculadora, galeria */
+:root{
+  --bg:#0E1013;
+  --surface:#16191E;
+  --raise:#1E2228;
+  --ink:#F2EEE6;
+  --muted:#A7A196;
+  --line:#2B3038;
+  --gold:#C9A86A;
+  --gold-soft:#E6D3A8;
+  --hot:#E07A4A;
+  --cool:#86BBD0;
+  --wa:#25B566;
+  --f-display:"Instrument Serif", "Times New Roman", Georgia, serif;
+  --f-body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-num:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 56px}
+.wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:0}
+h2{font-size:2rem;line-height:1.05}
+h2 em{color:var(--gold-soft)}
+p{margin:0}
+figure{margin:0}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.sec{display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;flex-direction:column;gap:8px}
+.lead{color:var(--muted);font-size:.95rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:12px}
+
+/* Cabeçalho */
+.head{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.logo-card{background:#fff;border-radius:20px;padding:14px 18px;width:100%;max-width:340px;box-shadow:0 10px 30px #00000066}
+.logo-card img{display:block;width:100%;height:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.contact{display:flex;flex-direction:column;gap:12px}
+.crow{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;font-size:.92rem}
+.crow svg{width:20px;height:20px;margin-top:2px}
+.crow small{display:block;color:var(--muted);font-size:.78rem}
+.copy{font:inherit;font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--raise);color:var(--ink);cursor:pointer;margin-top:6px}
+.head h1{font-size:3.2rem;line-height:.95}
+.head h1 span{font-style:italic;color:var(--gold-soft)}
+.head .tag{color:var(--muted);max-width:30ch}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--wa);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #25B56699}70%{box-shadow:0 0 0 8px #25B56600}100%{box-shadow:0 0 0 0 #25B56600}}
+
+/* Foto principal */
+.hero{position:relative;border-radius:24px;overflow:hidden}
+.hero img{display:block;width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% center}
+.hero figcaption{position:absolute;inset:auto 0 0 0;padding:60px 18px 18px;background:linear-gradient(transparent,#0E1013F2);display:flex;flex-direction:column;gap:4px}
+.hero figcaption b{font-family:var(--f-display);font-weight:400;font-size:1.6rem;line-height:1.1}
+.hero figcaption span{font-size:.82rem;color:var(--gold-soft)}
+
+/* Botões */
+.ctas{display:flex;flex-direction:column;gap:10px}
+.btn{display:flex;align-items:center;gap:14px;text-decoration:none;padding:16px 18px;border-radius:16px;font-weight:600;background:var(--surface);border:1px solid var(--line);transition:border-color .2s,transform .2s}
+.btn:hover{border-color:var(--gold);transform:translateY(-1px)}
+.btn svg{flex:none;width:22px;height:22px}
+.btn .t{display:flex;flex-direction:column;min-width:0}
+.btn small{font-weight:500;color:var(--muted);font-size:.8rem}
+.btn .arr{margin-left:auto;color:var(--gold)}
+.btn.main{background:linear-gradient(135deg,#D9BC82,#B8955A);color:#16130D;border-color:transparent;padding:20px 18px;font-size:1.05rem}
+.btn.main small{color:#16130Dbb}
+.btn.main .arr{color:#16130D}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px 20px;display:flex;flex-direction:column;gap:18px}
+
+/* Como funciona */
+.how svg{width:100%;height:auto;display:block}
+.legend3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.legend3 div{display:flex;flex-direction:column;gap:2px;padding:12px 10px;border-radius:14px;background:var(--raise);min-width:0}
+.legend3 b{font-family:var(--f-num);font-size:1.1rem}
+.legend3 span{font-size:.74rem;color:var(--muted);line-height:1.3}
+.c-hot{color:var(--hot)}.c-uv{color:#B49CF0}.c-light{color:var(--gold-soft)}
+
+/* Medição */
+.meters{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.meters figure{position:relative;border-radius:16px;overflow:hidden;min-width:0}
+.meters img{display:block;width:100%;max-width:100%;aspect-ratio:1;object-fit:cover}
+.meters figcaption{position:absolute;inset:auto 0 0 0;padding:30px 10px 10px;background:linear-gradient(transparent,#000000d0);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar-row{display:flex;flex-direction:column;gap:6px}
+.bar-top{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted)}
+.bar-top b{font-family:var(--f-num);color:var(--ink);font-weight:600}
+.track{height:14px;border-radius:999px;background:var(--raise);overflow:hidden}
+.fill{height:100%;border-radius:999px}
+.fill.hot{width:100%;background:linear-gradient(90deg,#B85A2E,var(--hot))}
+.fill.cold{width:18.4%;background:linear-gradient(90deg,#4F8AA2,var(--cool))}
+.result-big{display:flex;align-items:baseline;gap:12px;padding-top:4px;border-top:1px solid var(--line)}
+.result-big b{font-family:var(--f-display);font-size:3.4rem;line-height:1;color:var(--gold-soft);font-weight:400}
+.result-big span{font-size:.86rem;color:var(--muted)}
+
+/* Produto */
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-radius:18px;overflow:hidden}
+.spec div{background:var(--raise);padding:16px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.spec b{font-family:var(--f-display);font-size:2.2rem;line-height:1;color:var(--gold-soft);font-weight:400}
+.spec span{font-size:.8rem;color:var(--muted)}
+.ticks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:.92rem}
+.ticks li{display:grid;grid-template-columns:22px 1fr;gap:8px}
+.ticks li::before{content:"";width:16px;height:16px;margin-top:3px;border-radius:50%;border:1.5px solid var(--gold);background:radial-gradient(circle,var(--gold) 0 3px,transparent 4px)}
+
+/* Passos */
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;position:relative;padding-bottom:22px}
+.steps li:last-child{padding-bottom:0}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:21px;top:44px;bottom:0;width:1px;background:var(--line)}
+.num{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--f-display);font-size:1.4rem;color:var(--gold-soft)}
+.steps h3{font-size:1.35rem;line-height:1.2}
+.steps p{font-size:.88rem;color:var(--muted)}
+
+/* Calculadora */
+.range{width:100%;accent-color:var(--gold)}
+.calc label{font-size:.85rem;font-weight:600;display:flex;justify-content:space-between;gap:8px}
+.calc label output{font-family:var(--f-num);color:var(--gold-soft)}
+.field{display:flex;flex-direction:column;gap:8px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.seg button{font:inherit;font-size:.84rem;padding:10px 4px;border-radius:12px;border:1px solid var(--line);background:var(--raise);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gold);color:#16130D;border-color:var(--gold);font-weight:700}
+.result{border-radius:18px;padding:18px;background:var(--raise);border:1px solid #C9A86A55;display:flex;flex-direction:column;gap:4px}
+.result .big{font-family:var(--f-display);font-size:3rem;line-height:1;color:var(--gold-soft)}
+.result small{color:var(--muted);font-size:.78rem}
+.note{color:var(--muted);font-size:.74rem}
+
+/* Galeria */
+.gallery{display:grid;grid-template-columns:1fr;gap:14px}
+.gallery figure{position:relative;border-radius:18px;overflow:hidden}
+.gallery img{display:block;width:100%;max-width:100%;aspect-ratio:16/10;object-fit:cover}
+.gallery figcaption{position:absolute;inset:auto 0 0 0;padding:30px 14px 12px;background:linear-gradient(transparent,#000000cc);font-size:.82rem;font-weight:600}
+
+/* Linha */
+.films{display:flex;flex-direction:column}
+.film-row{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.film-row:first-child{border-top:0;padding-top:0}
+.swatch{width:48px;height:48px;border-radius:12px;border:1px solid #ffffff22}
+.film-row h3{font-size:1.25rem;line-height:1.1}
+.film-row p{font-size:.84rem;color:var(--muted)}
+.tagpill{display:inline-block;font-family:var(--f-body);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--gold);color:#16130D;vertical-align:middle;margin-left:6px}
+
+.partners{display:flex;flex-direction:column;gap:10px}
+.foot{text-align:center;font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;padding-top:12px;border-top:1px solid var(--line)}
+.foot b{color:var(--ink)}
+
+/* Capa */
+.cover{position:relative;border-radius:28px;overflow:hidden;min-height:520px;display:flex;align-items:flex-end}
+.cover-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% center}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0E101333 0%,#0E101300 30%,#0E1013D9 70%,#0E1013 100%)}
+.cover-in{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:24px 18px 22px;width:100%}
+.cover-logo{width:100%;max-width:320px;height:auto;margin-bottom:auto;filter:drop-shadow(0 4px 18px #000c)}
+.cover .logo-card{max-width:260px;padding:10px 14px;margin-bottom:auto}
+.cover-title{font-family:var(--f-display);font-size:2.7rem;line-height:1;text-wrap:balance}
+.cover-title em{color:var(--gold-soft)}
+.cover-sub{color:#D9D4CA;font-size:.95rem;max-width:30ch}
+.cover .chip{background:#0E1013aa;backdrop-filter:blur(6px)}
+.social{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:-14px}
+.social a{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;font-size:.72rem;font-weight:600;color:var(--muted);padding:12px 4px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.social a svg{width:24px;height:24px;color:var(--gold)}
+.social a:hover{border-color:var(--gold);color:var(--ink)}
+.trust{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-radius:18px;overflow:hidden}
+.trust li{background:var(--surface);padding:12px 4px;display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0}
+.trust b{font-family:var(--f-display);font-weight:400;font-size:1.25rem;color:var(--gold-soft);line-height:1.1}
+.trust span{font-size:.66rem;color:var(--muted);line-height:1.2}
+/* Comparador */
+.compare{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1;max-width:100%;user-select:none;touch-action:pan-y}
+.compare>img,.cmp-top img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.cmp-top{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}
+.cmp-line{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold-soft);transform:translateX(-1px);pointer-events:none}
+.cmp-line span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--gold);color:#16130D;display:grid;place-items:center;font-weight:700;box-shadow:0 4px 14px #0008}
+.cmp-tag{position:absolute;top:10px;font-size:.68rem;font-weight:700;letter-spacing:.04em;padding:4px 8px;border-radius:8px;background:#000000b0;color:#fff;pointer-events:none}
+.cmp-tag.l{left:10px}.cmp-tag.r{right:10px}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.hint{text-align:center;font-size:.78rem;color:var(--muted);margin-top:-8px}
+/* Instagram */
+.iggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border-radius:18px;overflow:hidden}
+.iggrid img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.igbtn{background:linear-gradient(135deg,#2a1f3d,#3d1f2e 50%,#3d2a1a);border-color:#ffffff22}
+.igbtn svg{color:#fff}
+/* Barra fixa */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;color:#fff;background:var(--wa);
+  padding:14px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));box-shadow:0 -6px 24px #0009}
+.sticky svg{width:22px;height:22px}
+body{padding-bottom:110px}
+
+.pf{display:grid;grid-template-columns:1fr;gap:10px}
+.pf figure{position:relative;border-radius:20px;overflow:hidden}
+.pf img{display:block;width:100%;max-width:100%;object-fit:cover}
+.pf-main img{aspect-ratio:1/1;object-position:60% center}
+.pf-side img{aspect-ratio:16/9}
+.pf figcaption{position:absolute;inset:auto 0 0 0;padding:50px 16px 16px;background:linear-gradient(transparent,#000000d9);display:flex;flex-direction:column;gap:3px;font-size:.8rem;color:#D9D4CA}
+.pf figcaption b{font-family:var(--f-display);font-weight:400;font-size:1.5rem;color:#F2EEE6;line-height:1.1}
+.pf-side figcaption{padding:30px 14px 12px;font-weight:600;color:#F2EEE6}
+
+.amb{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-16px;padding-inline:16px;padding-bottom:6px;scrollbar-width:none}
+.amb::-webkit-scrollbar{display:none}
+.amb figure{flex:0 0 78%;scroll-snap-align:start;position:relative;border-radius:20px;overflow:hidden}
+.amb img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+.amb figcaption{position:absolute;inset:auto 0 0 0;padding:60px 16px 16px;background:linear-gradient(transparent,#000000d9);display:flex;flex-direction:column;gap:2px}
+.amb b{font-family:var(--f-display);font-weight:400;font-size:1.5rem;line-height:1.1;color:#F2EEE6}
+.amb span{font-size:.8rem;color:#D9D4CA}
+
+.chip.gold{border-color:#C9A86A;color:#E6D3A8}
+.champ{position:relative;border-radius:22px;overflow:hidden;border:1px solid #C9A86A66}
+.champ img{display:block;width:100%;max-width:100%;aspect-ratio:6/7;object-fit:cover;object-position:center top}
+.champ figcaption{position:absolute;inset:auto 0 0 0;padding:70px 16px 16px;background:linear-gradient(transparent,#0E1013F0);display:flex;align-items:center;gap:14px}
+.medal{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:1.5rem;color:#16130D;background:radial-gradient(circle at 35% 30%,#F3E2B8,#C9A86A 60%,#8C6D35)}
+.champ b{display:block;font-family:var(--f-display);font-weight:400;font-size:1.5rem;line-height:1.1;color:#F2EEE6}
+.champ figcaption span:not(.medal){font-size:.8rem;color:#E6D3A8}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="cover">
+    <img class="cover-bg" src="img/sacada-cascavel-premium.jpg" alt="Sacada envidraçada em Cascavel com película Supreme Ceramic">
+    <div class="cover-in">
+      <svg class="cover-logo" viewBox="0 0 320 120" role="img" aria-label="Solar Films"><defs><linearGradient id="hyc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9A86A" stop-opacity="0"/><stop offset="1" stop-color="#C9A86A"/></linearGradient></defs>
+<path d="M28 84 C 40 22, 270 6, 300 40" fill="none" stroke="#C9A86A" stroke-width="1.6"/>
+<path d="M300 40 C 312 64, 140 108, 40 92" fill="none" stroke="#C9A86A" stroke-width="1.6" opacity=".45"/>
+<circle cx="300" cy="40" r="5.5" fill="#C9A86A"/>
+<rect x="4" y="52" width="36" height="2.4" fill="url(#hyc)"/><rect x="12" y="60" width="28" height="2.4" fill="url(#hyc)"/>
+<text x="56" y="68" font-family="Manrope, sans-serif" font-weight="800" font-style="italic" font-size="36" letter-spacing="3" fill="#F2EEE6" transform="skewX(-8)">SOLAR</text>
+<text x="197" y="68" font-family="Manrope, sans-serif" font-weight="300" font-style="italic" font-size="33" letter-spacing="1" fill="#E6D3A8" transform="skewX(-8)">FILMS</text>
+<text x="74" y="88" font-family="Manrope, sans-serif" font-weight="500" font-size="8.5" letter-spacing="3.4" fill="#F2EEE6" opacity=".7">AUTOMOTIVO · ARQUITETURA</text></svg>
+      <h1 class="sr">Solar Films</h1>
+      <p class="cover-title">Deixe o sol entrar,<br><em>mas o calor não passar.</em></p>
+      <p class="cover-sub">Película nanocerâmica para casas, empresas e carros. 82% menos energia solar, medido em Cascavel.</p>
+      <div class="chips">
+        <span class="chip"><span class="dot"></span>Especialistas online</span>
+        <span class="chip">Cascavel e região · Paraguai</span>
+        <span class="chip gold">🏆 Campeão CLAP 2025 · Arquitetura</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="social" aria-label="Redes e contato">
+    <a id="igTop" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span>Instagram</span></a>
+    <a data-wa="Olá! Vi o link da Solar Films e quero um orçamento de película." href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg><span>WhatsApp</span></a>
+    <a href="https://www.facebook.com/solarinsulfilm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg><span>Facebook</span></a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Pernambuco+1114+Centro+Cascavel+PR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Endereço</span></a>
+  </nav>
+
+  <nav class="ctas" aria-label="Contato">
+    <a class="btn main" data-wa="Olá! Vi o link da Solar Films e quero um orçamento de película." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+      <span class="t">Pedir orçamento no WhatsApp<small>Casa, empresa ou carro · resposta rápida</small></span>
+      <span class="arr">→</span>
+    </a>
+    <a class="btn" data-wa="Olá! Quero tirar uma dúvida sobre película com um especialista." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+      <span class="t">Falar com especialista<small>Qual película é a certa para o seu vidro?</small></span>
+      <span class="arr">→</span>
+    </a>
+    <a class="btn" id="ig" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#C9A86A"/></svg>
+      <span class="t">Antes e depois no Instagram<small id="igHandle">@solar.films1</small></span>
+      <span class="arr">→</span>
+    </a>
+  </nav>
+
+  <ul class="trust">
+    <li><b>FilmStar</b><span>película original</span></li>
+    <li><b>EUA</b><span>fabricação americana</span></li>
+    <li><b>1º</b><span>lugar CLAP 2025</span></li>
+    <li><b>−82%</b><span>medido em Cascavel</span></li>
+  </ul>
+
+  <section class="sec" aria-labelledby="pro-t">
+    <div class="sec-head">
+      <p class="eyebrow">Quem aplica</p>
+      <h2 id="pro-t">Aplicado pelo <em>campeão latino-americano</em></h2>
+      <p class="lead">Valdecir Prestes ficou em 1º lugar na categoria Instalação de Película Arquitetônica da CLAP 2025, a Conferência Latino-Americana de Aplicadores de Películas.</p>
+    </div>
+    <figure class="champ">
+      <img src="img/campeao-clap.jpg" alt="Valdecir Prestes no primeiro lugar do pódio da CLAP 2025, categoria arquitetura" loading="lazy">
+      <figcaption><span class="medal">1º</span><div><b>Valdecir Prestes</b><span>Campeão CLAP 2025 · Película arquitetônica</span></div></figcaption>
+    </figure>
+    <ul class="ticks">
+      <li>Acabamento de competição na sua casa</li>
+      <li>Sem bolhas, sem bordas soltas, sem sujeira</li>
+      <li>Quem mede, orienta e aplica é o próprio campeão</li>
+    </ul>
+  </section>
+
+  <section class="sec how" aria-labelledby="how-t">
+    <div class="sec-head">
+      <p class="eyebrow">Como funciona</p>
+      <h2 id="how-t">O sol bate no vidro. <em>A película escolhe o que entra.</em></h2>
+    </div>
+    <div class="panel">
+      <svg viewBox="0 0 400 250" role="img" aria-label="Desenho: o calor e os raios UV batem na película e voltam; a luz passa para dentro do ambiente">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker>
+        </defs>
+        <rect x="0" y="0" width="400" height="250" fill="#16191E"/>
+        <rect x="210" y="0" width="190" height="250" fill="#1A2329"/>
+        <text x="20" y="24" fill="#A7A196" font-family="Manrope, sans-serif" font-size="11" letter-spacing="2">LADO DE FORA</text>
+        <text x="380" y="24" fill="#A7A196" font-family="Manrope, sans-serif" font-size="11" letter-spacing="2" text-anchor="end">SUA CASA</text>
+        <circle cx="46" cy="70" r="22" fill="#C9A86A"/>
+        <g stroke="#C9A86A" stroke-width="2" stroke-linecap="round">
+          <line x1="46" y1="38" x2="46" y2="32"/><line x1="46" y1="102" x2="46" y2="108"/><line x1="14" y1="70" x2="8" y2="70"/><line x1="78" y1="70" x2="84" y2="70"/><line x1="23" y1="47" x2="19" y2="43"/><line x1="69" y1="93" x2="73" y2="97"/>
+        </g>
+        <rect x="200" y="30" width="10" height="210" fill="#86BBD0" opacity=".35"/>
+        <rect x="200" y="30" width="3" height="210" fill="#C9A86A"/>
+        <text x="205" y="248" fill="#C9A86A" font-family="Manrope, sans-serif" font-size="10" text-anchor="middle">película</text>
+        <path d="M80 92 L196 110" stroke="#E07A4A" stroke-width="3" fill="none"/>
+        <path d="M196 110 L120 160" stroke="#E07A4A" stroke-width="3" fill="none" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+        <text x="96" y="182" fill="#E07A4A" font-family="Manrope, sans-serif" font-size="12" font-weight="700">Calor volta</text>
+        <path d="M78 108 L196 160" stroke="#B49CF0" stroke-width="3" fill="none"/>
+        <path d="M196 160 L140 214" stroke="#B49CF0" stroke-width="3" fill="none" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+        <text x="64" y="226" fill="#B49CF0" font-family="Manrope, sans-serif" font-size="12" font-weight="700">UV bloqueado</text>
+        <path d="M84 78 L196 74" stroke="#E6D3A8" stroke-width="3" fill="none"/>
+        <path d="M212 73 L360 68" stroke="#E6D3A8" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+        <text x="300" y="56" fill="#E6D3A8" font-family="Manrope, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Luz entra</text>
+        <g transform="translate(262 150)">
+          <rect x="0" y="22" width="96" height="30" rx="8" fill="#2B3038"/>
+          <rect x="6" y="8" width="84" height="22" rx="8" fill="#353B45"/>
+          <rect x="4" y="52" width="6" height="10" fill="#2B3038"/><rect x="86" y="52" width="6" height="10" fill="#2B3038"/>
+          <text x="48" y="-10" fill="#86BBD0" font-family="IBM Plex Mono, monospace" font-size="14" text-anchor="middle">ambiente fresco</text>
+        </g>
+      </svg>
+      <div class="legend3">
+        <div><b class="c-hot">até 97%</b><span>do infravermelho, que é o calor, barrado</span></div>
+        <div><b class="c-uv">99%</b><span>dos raios UV bloqueados</span></div>
+        <div><b class="c-light">Alta</b><span>claridade mantida, sem escurecer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="amb-t">
+    <div class="sec-head">
+      <p class="eyebrow">Onde aplicamos</p>
+      <h2 id="amb-t">Feita para projetos <em>de alto padrão</em></h2>
+      <p class="lead">Quanto mais vidro, mais sol entra. É aí que a película faz diferença.</p>
+    </div>
+    <div class="amb" tabindex="0" aria-label="Ambientes onde a película é aplicada">
+      <figure><img src="img/amb-sala-vidro.jpg" alt="Sala com parede de vidro do chão ao teto voltada para a piscina" loading="lazy"><figcaption><b>Vidro do chão ao teto</b><span>Salas e pés-direitos altos</span></figcaption></figure>
+      <figure><img src="img/amb-piscina.jpg" alt="Casa moderna com grandes janelas e piscina" loading="lazy"><figcaption><b>Casas com piscina</b><span>Fachadas e áreas de lazer</span></figcaption></figure>
+      <figure><img src="img/amb-living.jpg" alt="Living amplo com janelas grandes" loading="lazy"><figcaption><b>Livings integrados</b><span>Proteção para móveis e pisos</span></figcaption></figure>
+      <figure><img src="img/amb-casa-noite.jpg" alt="Casa contemporânea com fachada envidraçada" loading="lazy"><figcaption><b>Fachadas envidraçadas</b><span>Privacidade de dia</span></figcaption></figure>
+    </div>
+    <p class="note">Imagens ilustrativas de ambientes.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="med-t">
+    <div class="sec-head">
+      <p class="eyebrow">Medição real · Cascavel</p>
+      <h2 id="med-t">Medimos o sol <em>antes e depois.</em></h2>
+      <p class="lead">Mesma sacada, mesmo horário, com um medidor de energia solar.</p>
+    </div>
+    <div class="panel">
+      <div class="compare" id="cmp">
+        <img src="img/medicao-com.jpg" alt="Com Supreme Ceramic: medidor marca 64,9">
+        <div class="cmp-top" id="cmpTop"><img src="img/medicao-sem.jpg" alt="Sem película: medidor marca 351,8"></div>
+        <span class="cmp-tag l">Sem película · 351,8</span>
+        <span class="cmp-tag r">Com película · 64,9</span>
+        <div class="cmp-line" id="cmpLine"><span>⇆</span></div>
+        <input type="range" id="cmpR" min="0" max="100" value="50" aria-label="Arraste para comparar sem e com película">
+      </div>
+      <p class="hint">Arraste para comparar</p>
+      <div class="bars" role="img" aria-label="Gráfico: 351,8 sem película contra 64,9 com película">
+        <div class="bar-row"><div class="bar-top"><span>Sem película</span><b>351,8</b></div><div class="track"><div class="fill hot"></div></div></div>
+        <div class="bar-row"><div class="bar-top"><span>Com Supreme Ceramic</span><b>64,9</b></div><div class="track"><div class="fill cold"></div></div></div>
+      </div>
+      <div class="result-big"><b>−82%</b><span>de energia solar entrando pelo vidro (BTU/ft²·h)</span></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="sc-t">
+    <div class="sec-head">
+      <p class="eyebrow">A película que aplicamos</p>
+      <h2 id="sc-t">FilmStar <em>Supreme Ceramic</em></h2>
+      <p class="lead">Nanocerâmica fabricada nos Estados Unidos. Barra o calor e deixa a luz passar.</p>
+    </div>
+    <div class="spec">
+      <div><b>97%</b><span>rejeição de infravermelho</span></div>
+      <div><b>99%</b><span>bloqueio de raios UV</span></div>
+      <div><b>6×</b><span>mais resistente a riscos</span></div>
+      <div><b>EUA</b><span>fabricação americana</span></div>
+    </div>
+    <ul class="ticks">
+      <li>Sem metal: não atrapalha Wi‑Fi, celular nem GPS</li>
+      <li>Baixo reflexo por dentro, a vista fica nítida</li>
+      <li>Cor estável, não fica roxa nem desbota</li>
+      <li>Tons do quase transparente ao mais escuro</li>
+    </ul>
+  </section>
+
+  <section class="sec" aria-labelledby="steps-t">
+    <div class="sec-head">
+      <p class="eyebrow">Como é o serviço</p>
+      <h2 id="steps-t">Do orçamento à <em>sala fresca</em></h2>
+    </div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h3>Você chama no WhatsApp</h3><p>Manda fotos dos vidros e conta onde bate sol.</p></div></li>
+      <li><span class="num">2</span><div><h3>Visita e medição</h3><p>Medimos os vidros e mostramos as amostras de tom no local.</p></div></li>
+      <li><span class="num">3</span><div><h3>Aplicação limpa</h3><p>Sem obra e sem quebra-quebra. Na maioria das casas, termina no mesmo dia.</p></div></li>
+      <li><span class="num">4</span><div><h3>Garantia</h3><p>Você recebe a garantia da película e o nosso suporte.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="sec calc" aria-labelledby="calc-t">
+    <div class="sec-head">
+      <p class="eyebrow">Calculadora de economia</p>
+      <h2 id="calc-t">Quanto o ar <em>deixa de gastar?</em></h2>
+    </div>
+    <div class="panel">
+      <div class="field">
+        <label for="m2">Área de vidro que pega sol <output id="m2o">12 m²</output></label>
+        <input class="range" id="m2" type="range" min="2" max="80" value="12">
+      </div>
+      <div class="field">
+        <label for="hrs">Horas de ar ligado por dia <output id="hrso">6 h</output></label>
+        <input class="range" id="hrs" type="range" min="1" max="24" value="6">
+      </div>
+      <div class="field">
+        <label>Quando o sol bate no vidro</label>
+        <div class="seg" id="sun" role="group" aria-label="Exposição ao sol">
+          <button type="button" data-v="0.7" aria-pressed="false">Manhã</button>
+          <button type="button" data-v="1" aria-pressed="true">Tarde</button>
+          <button type="button" data-v="1.25" aria-pressed="false">O dia todo</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="kwh">Preço do kWh na sua conta <output id="kwho">R$ 0,95</output></label>
+        <input class="range" id="kwh" type="range" min="0.6" max="1.4" step="0.05" value="0.95">
+      </div>
+      <div class="result" aria-live="polite">
+        <small>Economia estimada por mês</small>
+        <span class="big" id="save">R$ 0</span>
+        <small id="saveYear">R$ 0 por ano</small>
+      </div>
+      <a class="btn" id="calcWa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#25B566" stroke-width="2"><path d="M5 12l5 5 9-10"/></svg>
+        <span class="t">Enviar esta simulação no WhatsApp<small>Um especialista confere as medidas</small></span>
+        <span class="arr">→</span>
+      </a>
+      <p class="note">Estimativa para película cerâmica em vidro incolor. O valor real depende do vidro, da orientação e do aparelho.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="gal-t">
+    <div class="sec-head">
+      <p class="eyebrow">Obras</p>
+      <h2 id="gal-t">Nossas <em>obras</em></h2>
+    </div>
+    <div class="pf">
+      <figure class="pf-main"><img src="img/portfolio-canto.jpg" alt="Canto da sacada envidraçada com película Supreme Ceramic 70, em Cascavel" loading="lazy">
+        <figcaption><span class="eyebrow">Obra em destaque</span><b>Sacada panorâmica · Cascavel</b><span>Supreme Ceramic 70 · 82% menos energia solar medida</span></figcaption>
+      </figure>
+      <figure class="pf-side"><img src="img/portfolio-vista.jpg" alt="Vista da cidade pela sacada com película, sem escurecer" loading="lazy"><figcaption>Vista nítida, sem escurecer</figcaption></figure>
+    </div>
+    <a class="btn" id="igPf" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#C9A86A"/></svg><span class="t">Ver todas as obras<small>No Instagram @solar.films1</small></span><span class="arr">→</span></a>
+  </section>
+
+  <section class="sec" aria-labelledby="films-t">
+    <div class="sec-head">
+      <p class="eyebrow">Linha de películas</p>
+      <h2 id="films-t">Qual combina <em>com o seu vidro</em></h2>
+    </div>
+    <div class="panel films">
+      <div class="film-row"><div class="swatch" style="background:linear-gradient(135deg,#6E8C9B,#3F5A68)"></div><div><h3>Supreme Ceramic<span class="tagpill">Mais vendida</span></h3><p>Máximo corte de calor, quase sem escurecer. Sacadas e salas.</p></div></div>
+      <div class="film-row"><div class="swatch" style="background:linear-gradient(135deg,#C9D3D8,#7C8A92 55%,#E8EEF0)"></div><div><h3>Espelhada</h3><p>Reflete o sol e dá privacidade de dia. Fachadas.</p></div></div>
+      <div class="film-row"><div class="swatch" style="background:linear-gradient(135deg,#4A4F52,#25292B)"></div><div><h3>Fumê</h3><p>Menos ofuscamento em telas e TV.</p></div></div>
+      <div class="film-row"><div class="swatch" style="background:repeating-linear-gradient(90deg,#F2F5F6 0 6px,#DCE3E6 6px 8px)"></div><div><h3>Jateada</h3><p>Visual de vidro jateado para box e divisórias.</p></div></div>
+      <div class="film-row"><div class="swatch" style="background:linear-gradient(135deg,#BFE0EA,#8DBFD0)"></div><div><h3>Segurança</h3><p>Segura os estilhaços se o vidro quebrar.</p></div></div>
+      <div class="film-row"><div class="swatch" style="background:linear-gradient(135deg,#2A2D33,#0D0F12);box-shadow:inset 0 -10px 0 #C9A86A55"></div><div><h3>Automotiva</h3><p>Supreme Ceramic para o carro: menos calor ao volante, sem atrapalhar o sinal do celular.</p></div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="py-t">
+    <div class="sec-head">
+      <p class="eyebrow">Atendemos no Paraguai</p>
+      <h2 id="py-t">¿Estás en <em>Paraguay?</em></h2>
+      <p class="lead">Atendemos en español en Ciudad del Este y región.</p>
+    </div>
+    <a class="btn" data-wa="¡Hola! Estoy en Paraguay y quiero un presupuesto de lámina Supreme Ceramic." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+      <span class="t">Presupuesto en español<small>Respuesta por WhatsApp</small></span><span class="arr">→</span>
+    </a>
+  </section>
+
+  <section class="sec partners" aria-labelledby="work-t">
+    <div class="sec-head">
+      <p class="eyebrow">Parcerias</p>
+      <h2 id="work-t">Trabalhe <em>com a gente</em></h2>
+    </div>
+    <a class="btn" data-wa="Olá! Sou arquiteto(a) e quero ser parceiro(a) da Solar Films." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+      <span class="t">Arquitetos parceiros<small>Especifique com suporte técnico</small></span><span class="arr">→</span>
+    </a>
+    <a class="btn" data-wa="Olá! Quero me cadastrar como aplicador de películas da Solar Films." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M4 20l6-6M14 4l6 6-8 8-6-6z"/></svg>
+      <span class="t">Cadastro de aplicadores<small>Receba indicações na sua região</small></span><span class="arr">→</span>
+    </a>
+    <a class="btn" data-wa="Olá! Já sou cliente da Solar Films e preciso de atendimento." href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg>
+      <span class="t">Já sou cliente (SAC)<small>Garantia, manutenção e dúvidas</small></span><span class="arr">→</span>
+    </a>
+  </section>
+
+  <section class="sec" aria-labelledby="ig-t">
+    <div class="sec-head">
+      <p class="eyebrow">Instagram</p>
+      <h2 id="ig-t">Acompanhe as <em>obras</em></h2>
+      <p class="lead">Antes e depois, medições e novos trabalhos toda semana.</p>
+    </div>
+    <div class="iggrid">
+      <img src="img/sacada-cascavel-premium.jpg" alt="" loading="lazy"><img src="img/medicao-com.jpg" alt="" loading="lazy"><img src="img/portfolio-canto.jpg" alt="" loading="lazy">
+    </div>
+    <a class="btn igbtn" id="igMain" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span class="t">Seguir @solar.films1<small>Fotos e vídeos dos trabalhos</small></span><span class="arr">→</span></a>
+  </section>
+
+  <section class="sec" aria-labelledby="ct-t">
+    <div class="sec-head">
+      <p class="eyebrow">Onde estamos</p>
+      <h2 id="ct-t">Venha <em>conhecer</em></h2>
+    </div>
+    <div class="panel contact">
+      <div class="crow"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div>Rua Pernambuco, 1114 · Centro<small>Cascavel – PR · CEP 85810-021</small></div></div>
+      <div class="crow"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><div>Valdecir Prestes<small id="waShow2"></small><button class="copy" type="button" id="copyWa">Copiar número</button></div></div>
+      <div class="crow"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div>solar-films@hotmail.com<small>Para orçamentos de obra e empresas</small></div></div>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rua+Pernambuco+1114+Centro+Cascavel+PR" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>
+        <span class="t">Abrir no mapa<small>Como chegar</small></span><span class="arr">→</span>
+      </a>
+      <a class="btn" href="https://www.facebook.com/solarinsulfilm" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.6"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg>
+        <span class="t">Facebook<small>@solarinsulfilm</small></span><span class="arr">→</span>
+      </a>
+      <a class="btn igbtn" id="igEnd" href="https://www.instagram.com/solar.films1/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        <span class="t">Instagram<small>@solar.films1</small></span><span class="arr">→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>WhatsApp: <b id="waShow"></b></span>
+    <span>Solar Films · Insulfilm automotivo e arquitetônico · Cascavel – PR e região · Paraguai</span>
+  </footer>
+</div>
+
+<a class="sticky" data-wa="Olá! Vi o link da Solar Films e quero um orçamento de película." href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>Orçamento pelo WhatsApp</a>
+
+<script>
+/* ===== Dados da empresa: troque aqui ===== */
+const CONFIG = {
+  whatsapp: "5545998322938",       // TEMPORÁRIO (Francielli). Valdecir: 5545991559912
+  whatsappShow: "(45) 9 9832-2938",
+  instagram: "solar.films1"
+};
+
+const wa = (msg) => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+document.querySelectorAll("[data-wa]").forEach(a => a.href = wa(a.dataset.wa));
+document.getElementById("ig").href = "https://www.instagram.com/" + CONFIG.instagram + "/";
+document.getElementById("igHandle").textContent = "@" + CONFIG.instagram;
+document.getElementById("waShow").textContent = CONFIG.whatsappShow;
+document.getElementById("waShow2").textContent = "WhatsApp " + CONFIG.whatsappShow;
+document.getElementById("copyWa").addEventListener("click", e => {
+  const b = e.currentTarget;
+  navigator.clipboard.writeText(CONFIG.whatsappShow).then(() => b.textContent = "Copiado", () => b.textContent = CONFIG.whatsappShow).catch(() => b.textContent = CONFIG.whatsappShow);
+});
+
+document.getElementById("igPf").href = document.getElementById("igTop").href = document.getElementById("igMain").href = "https://www.instagram.com/" + CONFIG.instagram + "/";
+const cmpR = document.getElementById("cmpR");
+cmpR.addEventListener("input", () => {
+  const v = cmpR.value;
+  document.getElementById("cmpTop").style.clipPath = `inset(0 ${100 - v}% 0 0)`;
+  document.getElementById("cmpLine").style.left = v + "%";
+});
+/* Calculadora */
+const $ = id => document.getElementById(id);
+let sunF = 1;
+const brl = v => v.toLocaleString("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
+function calc(){
+  const m2 = +$("m2").value, h = +$("hrs").value, k = +$("kwh").value;
+  $("m2o").textContent = m2 + " m²";
+  $("hrso").textContent = h + " h";
+  $("kwho").textContent = "R$ " + k.toFixed(2).replace(".", ",");
+  // ganho solar médio ~0,25 kW/m² em vidro incolor, película cerâmica corta ~55%, ar com eficiência ~3
+  const kwhMes = m2 * 0.25 * sunF * Math.min(h, 10) * 0.55 / 3 * 30;
+  const mes = kwhMes * k;
+  $("save").textContent = brl(mes);
+  $("saveYear").textContent = brl(mes * 12) + " por ano · " + Math.round(kwhMes) + " kWh a menos por mês";
+  const sunTxt = document.querySelector('#sun [aria-pressed="true"]').textContent.toLowerCase();
+  $("calcWa").href = wa(`Olá! Fiz a simulação no site: ${m2} m² de vidro, sol de ${sunTxt}, ar ligado ${h}h por dia. Economia estimada de ${brl(mes)} por mês. Quero um orçamento.`);
+}
+["m2","hrs","kwh"].forEach(id => $(id).addEventListener("input", calc));
+document.querySelectorAll("#sun button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll("#sun button").forEach(x => x.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true"); sunF = +b.dataset.v; calc();
+}));
+calc();
+</script>
+
+</body>
+</html>
